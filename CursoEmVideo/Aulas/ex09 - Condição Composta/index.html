@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeroporto</title>
+</head>
+<body>
+  <h1>Nacionalidade</h1>
+  <form action="">
+    <label for="pais">Você é de que país?</label>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div class="res">
+
+    </div>
+  </form>
+  <script>
+    var txtp = document.querySelector('input#pais')
+    var res = document.querySelector('div.res')
+    function enviar() {
+      if (txtp.value == 'Brasil') {
+        res.innerHTML = `<p>Você é <strong>BRASILEIRO</strong></p>`
+      } else {
+        if (txtp.value == 'USA' || txtp.value == 'EUA') {
+          res.innerHTML = `<p>Você é <strong>AMERICANO</strong></p>`
+        } else {
+          res.innerHTML = `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+        }
+      }
+    }
+  </script> 
+</body>
+</html>
