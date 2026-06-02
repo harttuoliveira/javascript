@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-:root {
-  --manha: #F3D181;
-  --tarde: #E49016;
-  --noite: #185C9B;
-  --madruga: #0B1A2B;
-}
-
 body {
   background-color: rgb(100, 170, 250);
   font-family: Arial, Helvetica, sans-serif;
@@ -25,18 +18,10 @@ section {
   width: 500px;
   margin: auto;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.350);
-  text-align: center;
 }
 
 footer {
   text-align: center;
   color: white;
   font-style: italic;
-}
-
-img {
-  padding-top: 20px;
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
 }
